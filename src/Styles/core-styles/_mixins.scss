@@ -1,0 +1,36 @@
+// 320px — 480px: Mobile devices.
+// 481px — 768px: iPads, Tablets.
+// 769px — 1024px: Small screens, laptops.
+// 1025px — 1200px: Desktops, large screens.
+// 1201px and more — Extra large screens, TV.
+
+// Break-points
+// 640em,1024em,1400em
+
+
+// 320px,520px,640px,720px,860px,1024px,1400px
+$breakpoints-up : ("x-small": "20em","small" : "32.5em","small-plus"  : "40em","meadium": "45em","mid-meadium" : "53.75em","large" : "64em", "x-large" : "87.5em");
+
+// 319px,519px,619px,719px,859px,1023px,1399px
+$breakpoints-down : ("x-small": "19.9375em","small" : "32.4375em","small-plus"  : "38.6875em","meadium": "44.9375em","mid-meadium" : "53.6875em","large" : "63.9375em", "x-large" : "87.4375em");
+
+
+
+
+// mixin for breakpoint-up
+@mixin  breakpoint-up($size){
+    @media (min-width : map-get($breakpoints-up,$size)){
+        @content;
+    }
+    
+}
+
+
+
+
+// mixin for breakpoint-down
+@mixin  breakpoint-down($size){
+    @media (max-width : map-get($breakpoints-down,$size)){
+        @content;
+    }
+}

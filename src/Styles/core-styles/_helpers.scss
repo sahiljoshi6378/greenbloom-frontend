@@ -1,0 +1,48 @@
+// Flexbox related clases
+.flex{
+    display: flex;
+
+    &__aic{
+        align-items: center;
+    }
+
+    &__acc{
+        align-content: center;
+    }
+
+
+    &__jic{
+        justify-items: center;
+    }
+
+    &__jcc{
+        justify-content: center;
+    }
+
+
+
+    &__aifs{
+        align-items:flex-start;
+    }
+
+    &__aife{
+        align-items: flex-end;
+    }
+
+    &__acfs{
+        align-content: flex-start;
+    }
+
+    &__acfe{
+        align-content: flex-end;
+    }
+
+
+    &__fdc{
+        flex-direction: column;
+    }
+
+    &__fdr{
+        flex-direction: row;
+    }
+}
